@@ -1,0 +1,5 @@
+patch patches/0001-Support-for-Renesas-Bluetooth-Low-Energy-HCI-over-UA.patch
+patch patches/0002-Adding-DA16600-reset-by-GPIO.patch
+patch patches/0003-Bluetooth-hci_renesas-Fix-compiler-warning.patch
+patch patches/0004-Bluetooth-hci_renesas-Fix-issue-with-reset-pin-direc.patch
+patch patches/0005-Bluetooth-hci_renesas-Complete-the-setup-regardless-.patch

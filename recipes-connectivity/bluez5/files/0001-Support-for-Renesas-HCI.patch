@@ -1,0 +1,37 @@
+From 88ccd03edc1eb92b2752c972208e8527e0051769 Mon Sep 17 00:00:00 2001
+From: Alvin Park <alvin.park.pv@renesas.com>
+Date: Wed, 6 Apr 2022 22:06:28 +0900
+Subject: [PATCH] Support for Renesas HCI
+
+---
+ tools/btattach.c  | 1 +
+ tools/hciattach.h | 1 +
+ 2 files changed, 2 insertions(+)
+
+diff --git a/tools/btattach.c b/tools/btattach.c
+index 56315d050..30469f065 100644
+--- a/tools/btattach.c
++++ b/tools/btattach.c
+@@ -225,6 +225,7 @@ static const struct {
+ 	{ "ag6xx", HCI_UART_AG6XX },
+ 	{ "nokia", HCI_UART_NOKIA },
+ 	{ "mrvl",  HCI_UART_MRVL  },
++	{ "renesas", HCI_UART_RENESAS },
+ 	{ }
+ };
+ 
+diff --git a/tools/hciattach.h b/tools/hciattach.h
+index 249aab49e..801d0ec42 100644
+--- a/tools/hciattach.h
++++ b/tools/hciattach.h
+@@ -45,6 +45,7 @@
+ #define HCI_UART_AG6XX	9
+ #define HCI_UART_NOKIA	10
+ #define HCI_UART_MRVL	11
++#define HCI_UART_RENESAS	12
+ 
+ #define HCI_UART_RAW_DEVICE	0
+ #define HCI_UART_RESET_ON_INIT	1
+-- 
+2.25.1
+
