@@ -2,7 +2,8 @@ This README file contains information on the contents of the meta-da14531 layer.
 
 The DA14531 is a ultra-low power Bluetooth 5.1 System-on-Chip.
 The DA14531 must either be programmed with a firmware that allows on-the-fly
-programming or with a firmware with HCI support.
+programming or with a firmware with HCI support (e.g.
+[hci\_531.bin](recipes-kernel/linux-firmware/linux-firmware/hci_531.bin)).
 
 Dependencies
 ============
